@@ -14,12 +14,11 @@ export VISUAL="vim"
 export EDITOR="$VISUAL"
 
 ## PATH setup
+export GOROOT="$HOME/go"
 export GOPATH="$HOME/dev/go"
 export RBENV_DIR="$HOME/.rbenv"
-export NVM_DIR="$HOME/.nvm"
-export PATH=$GOPATH/bin:$RBENV_DIR/bin:$PATH
+export PATH=$GOROOT/bin:$GOPATH/bin:$RBENV_DIR/bin:$PATH
 
 eval "$(rbenv init -)"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 source /home/vagrant/.aliases
