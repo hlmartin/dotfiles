@@ -1,8 +1,8 @@
 # oh-my-zsh configuration
-export ZSH=/home/vagrant/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 HIST_STAMPS="dd.mm.yyyy"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="honukai"
 
 BUNDLED_COMMANDS=(rake rspec)
 plugins=(aws bundler docker git npm rbenv zsh-nvm)
@@ -21,4 +21,4 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$RBENV_DIR/bin:$PATH
 
 eval "$(rbenv init -)"
 
-source /home/vagrant/.aliases
+source $HOME/.aliases
