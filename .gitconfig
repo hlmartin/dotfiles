@@ -1,0 +1,14 @@
+# Private details included in separate file
+[include]
+  path = ~/.gitconfig.local
+
+[pager]
+  # https://github.com/so-fancy/diff-so-fancy
+  diff = diff-so-fancy | less --tabs=4 -RFX
+  show = diff-so-fancy | less --tabs=4 -RFX
+
+[diff]
+	tool = vimdiff 
+
+[difftool]
+	prompt = false

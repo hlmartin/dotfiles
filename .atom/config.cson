@@ -1,0 +1,12 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "6e8f7c66-444c-490e-8163-8b06ba2cdb61"
+  autosave:
+    enabled: true
+  core:
+    telemetryConsent: "limited"
+  "exception-reporting":
+    userId: "ea38abfa-8f14-4c1b-bc75-2d5d776f9bd4"
+  welcome:
+    showOnStartup: false

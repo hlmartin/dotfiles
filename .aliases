@@ -1,2 +1,6 @@
+# use python 3 because it's $CURRENT_YEAR, dammit
 alias python=python3
 alias pip=pip3
+
+# interactive delete by default
+alias rm=rm -i
