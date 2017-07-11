@@ -17,7 +17,13 @@ export EDITOR="$VISUAL"
 export GOPATH="$HOME/Dev/go"
 export RBENV_DIR="$HOME/.rbenv"
 export PATH=$GOPATH/bin:$RBENV_DIR/bin:$PATH
+export JAVA_HOME="$(/usr/libexec/java_home)"
 
 eval "$(rbenv init -)"
 
 source $HOME/.aliases
+
+# open file in chrome
+chrome () {
+  open -a "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" "$1"
+}

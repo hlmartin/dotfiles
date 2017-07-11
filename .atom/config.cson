@@ -5,8 +5,15 @@
   autosave:
     enabled: true
   core:
+    disabledPackages: [
+      "linter-js-yaml"
+    ]
     telemetryConsent: "limited"
   "exception-reporting":
     userId: "ea38abfa-8f14-4c1b-bc75-2d5d776f9bd4"
+  "linter-ui-default":
+    panelHeight: 69
+    showPanel: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
