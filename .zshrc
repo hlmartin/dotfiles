@@ -26,12 +26,12 @@ export SHELL=/bin/zsh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-if $(command -v rbenv) ; then
+if [[ -x "$(command -v rbenv)" ]] ; then
   export PATH=$HOME/.rbenv/bin:$PATH
   eval "$(rbenv init -)"
 fi
 
-if $(command -v go) ; then
+if [[ -z "$(command -v go)" ]] ; then
   export GOPATH=$HOME/dev/go
   export PATH=$GOPATH/bin:$PATH
 fi
