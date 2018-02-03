@@ -12,6 +12,12 @@ fi
 if $(uname -a | grep -q Microsoft) ; then
 fi
 
+# download a file to current directory
+function download() {
+  url=$1
+  curl $url --location --remote-header-name --output $(echo "${url##*/}")
+}
+
 # create a new directory and enter it
 function md() {
   mkdir -p "$@" && cd "$@"
@@ -22,8 +28,8 @@ function md() {
 function extract() {
   if [ -f "$1" ] ; then
     local filename=$(basename "$1")
-    local foldername="${filename%%.*}"
-    local fullpath=`perl -e 'use Cwd "abs_path";print abs_path(shift)' "$1"`
+    local foldername=$(echo $filename | tr '.' '_')
+    local fullpath=$(readlink -e $filename)
     local didfolderexist=false
 
     if [ -d "$foldername" ]; then
